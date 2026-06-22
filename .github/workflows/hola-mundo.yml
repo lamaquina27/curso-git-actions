@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout ranma
-      uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: Setup Python
-      uses: actions/setup-python@v6.2.0
+        uses: actions/setup-python@v6.2.0
     
       - name: hola-mundo
-      run: python hola.py
+        run: python hola.py
