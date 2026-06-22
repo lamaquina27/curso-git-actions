@@ -1,0 +1,14 @@
+name:hola-mundo
+on:[push]
+jobs:
+    
+  hola-mundo:
+  
+    runs-on:ubuntu-latets
+    steps:
+      uses: actions/checkout@v2
+      - name: Setup Python
+      uses: actions/setup-python@v6.2.0
+    
+      - name: hola-mundo
+      run: python hola.py
