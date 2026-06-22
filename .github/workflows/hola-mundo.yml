@@ -1,10 +1,10 @@
-name:hola-mundo
-on:[push]
+name: hola-mundo
+on: [push]
 jobs:
     
   hola-mundo:
   
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout ranma
       uses: actions/checkout@v2
