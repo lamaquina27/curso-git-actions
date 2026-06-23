@@ -1,0 +1,23 @@
+name: triggers
+run-name: triggers
+on: 
+
+  schedule: 
+    - cron: '25 9 * * *'
+  push:
+    branches:
+      - 'aprendiendo-github-actions'
+jobs:
+    
+  hola-mundo:
+  
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout ranma
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v6.2.0
+    
+      - name: hola-mundo
+        run: python hola.py
+  
